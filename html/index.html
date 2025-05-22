@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio & Services</title>
+   <style>
+      /* Core styles */
+      body {
+         font-family: sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #fff;
+         color: #05364d;
+      }
+
+      .container {
+         width: 1150px;
+         max-width: 90%;
+         margin: 0 auto;
+      }
+
+      .to-upperner {
+         text-transform: uppercase;
+      }
+
+      .clearfix {
+         clear: both;
+      }
+
+      /* Header */
+      header {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 20px 0;
+      }
+
+      .brand img {
+         width: 64px;
+      }
+
+      nav ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         display: flex;
+      }
+
+      nav li {
+         margin-right: 20px;
+      }
+
+      nav a {
+         color: #05364d;
+         text-decoration: none;
+         font-size: 14px;
+         font-weight: 500;
+         transition: color 0.3s;
+      }
+
+      nav a:hover {
+         color: chocolate;
+      }
+
+      nav .active a {
+         color: #1c44e4;
+      }
+
+      /* Main Section */
+      .main-section {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 100px 0;
+      }
+
+      .main-text {
+         max-width: 50%;
+      }
+
+      .welcome {
+         font-size: 16px;
+         color: #797979;
+         letter-spacing: 2px;
+      }
+
+      .introduction {
+         font-size: 60px;
+         color: #ad6507;
+         margin: 10px 0;
+      }
+
+      .position {
+         font-size: 24px;
+         color: #ad6507;
+         margin-bottom: 20px;
+      }
+
+      .action {
+         display: inline-block;
+         background-color: #24791a;
+         color: #fff;
+         padding: 15px 30px;
+         border: none;
+         border-radius: 5px;
+         text-transform: uppercase;
+         font-weight: 500;
+         cursor: pointer;
+         transition: background-color 0.3s;
+      }
+
+      .action:hover {
+         background-color: #1a5c14;
+      }
+
+      .main-img img {
+         max-width: 500px;
+         width: 100%;
+         border-radius: 8px;
+      }
+
+      /* Statistics */
+      .statistics {
+         text-align: center;
+         padding: 80px 0;
+         background-color: #f8faff;
+      }
+
+      .statistics-item {
+         display: inline-block;
+         margin: 0 20px;
+      }
+
+      .statistics-number {
+         font-size: 30px;
+         color: #1c44e4;
+      }
+
+      .statistics-title {
+         font-size: 16px;
+         color: #797979;
+         font-weight: 300;
+      }
+
+      /* About Me */
+      .me {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 80px 0;
+      }
+
+      .me-image img {
+         width: 200px;
+         border-radius: 50%;
+      }
+
+      .section-subtitle {
+         text-transform: uppercase;
+         color: #797979;
+         letter-spacing: 2px;
+         font-weight: 500;
+      }
+
+      .section-title {
+         font-size: 42px;
+         color: #05364d;
+         margin: 10px 0;
+      }
+
+      .me-description {
+         font-size: 14px;
+         line-height: 1.8;
+         color: #797979;
+      }
+
+      .blur-line {
+         display: inline-block;
+         width: 80px;
+         height: 4px;
+         background-color: #1e90ff;
+         filter: blur(4px);
+         border-radius: 4px;
+         margin-bottom: 10px;
+      }
+
+      /* Services */
+      .services {
+         background-color: #86869c;
+         color: #00f0ff;
+         text-align: center;
+         padding: 60px 0;
+      }
+
+      .services-cards {
+         display: flex;
+         justify-content: center;
+         gap: 30px;
+         flex-wrap: wrap;
+      }
+
+      .service-card {
+         background-color: #f0fdf4;
+         border: 2px solid #d1d5db;
+         border-radius: 12px;
+         padding: 30px 20px;
+         width: 250px;
+         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+         transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .service-card:hover {
+         transform: translateY(-8px);
+         background-color: #0ea5e9;
+         color: #fff;
+      }
+
+      .service-card:hover {
+         transform: translateY(-8px);
+         background-color: #0ea5e9;
+         color: #fff;
+      }
+
+
+      .service-card img {
+         width: 80px;
+         margin-bottom: 15px;
+      }
+
+      .service-card-title {
+         font-size: 20px;
+         font-weight: 500;
+         color: #05364d;
+         text-transform: uppercase;
+         margin-bottom: 10px;
+      }
+
+      .service-card-description {
+         font-size: 14px;
+         line-height: 1.8;
+         color: #797979;
+         margin-bottom: 20px;
+      }
+
+      .service-card-link {
+         display: inline-block;
+         font-size: 13px;
+         font-weight: 500;
+         text-transform: uppercase;
+         text-decoration: none;
+         transition: color 0.3s;
+      }
+
+      .service-card-link:hover {
+         color: #1e90ff;
+      }
+
+      .service-card:active {
+         color: chocolate;
+      }
+
+      /* Footer */
+      footer {
+         text-align: center;
+         padding: 20px 0;
+         background-color: #05364d;
+         color: #fff;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <!-- Header -->
+      <header>
+         <div class="brand"><img src="logo.png" alt="Brand Logo"></div>
+         <nav>
+            <ul>
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li> <a href="#number ">Number</a></li>
+            </ul>
+         </nav>
+      </header>
+
+      <!-- Main Section -->
+      <section class="main-section">
+         <div class="main-text">
+            <div class="welcome">Welcome to My World</div>
+            <div class="introduction">I am a Web Developer</div>
+            <div class="position">Specialized in Frontend & Backend</div>
+            <button class="action">Get in Touch</button>
+         </div>
+         <div class="main-img">
+            <img src="./html/mmm.jpg" alt="Profile Image">
+         </div>
+      </section>
+
+      <!-- Statistics -->
+      <section class="statistics">
+         <div class="statistics-item">
+            <div class="statistics-number">150+</div>
+            <div class="statistics-title">Projects</div>
+         </div>
+         <div class="statistics-item">
+            <div class="statistics-number">100%</div>
+            <div class="statistics-title">Satisfaction</div>
+         </div>
+         <div class="statistics-item">
+            <div class="statistics-number">5K</div>
+            <div class="statistics-title">Followers</div>
+         </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="me">
+         <div class="me-image">
+            <img src="./html/R.jpg" alt="About Me">
+         </div>
+         <div class="me-text">
+            <div class="section-subtitle">About Me</div>
+            <div class="blur-line"></div>
+            <div class="section-title">Hi, I'm Alex</div>
+            <div class="me-description">
+               Passionate developer with 5 years of experience in building dynamic websites and applications. Always
+               eager to learn new technologies and improve my skills.
+            </div>
+         </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="services">
+         <h2 class="section-title" style="color: #00f0ff;">My Services</h2>
+         <div class="services-cards">
+            <div class="service-card">
+               <img src="./filtering_5815665.png" alt="Service Icon">
+               <div class="service-card-title">Web Design</div>
+               <div class="service-card-description">Creating responsive and modern user interfaces for your websites.
+               </div>
+               <a href="#" class="service-card-link">Learn More</a>
+            </div>
+            <div class="service-card">
+               <img src="./css-code_5813697.png" alt="Service Icon">
+               <div class="service-card-title">Development</div>
+               <div class="service-card-description">Building robust backend systems with Node.js and Python.</div>
+               <a href="#" class="service-card-link">Learn More</a>
+            </div>
+            <div class="service-card">
+               <img src="./operating-system_5818283.png" alt="Service Icon">
+               <div class="service-card-title">SEO Optimization</div>
+               <div class="service-card-description">Improving your site's visibility and ranking on search engines.
+               </div>
+               <a href="#" class="service-card-link">Learn More</a>
+            </div>
+         </div>
+      </section>
+   </div>
+
+   <!-- Footer -->
+   <footer>
+      &copy; 2025 Alex | All Rights Reserved
+   </footer>
+</body>
+
+</html>
+
+<nav>
+   <ul>
+      <li><a href="">link 1</a></li>
+      <li><a href="">link 2</a></li>
+      <li><a href="">link 3</a></li>
+   </ul>
+</nav>
