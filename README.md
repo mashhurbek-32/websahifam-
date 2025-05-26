@@ -58,7 +58,7 @@
         <ul class="video-list">
             <li>
                 <video controls>
-                    <source src="videos/dars1.mp4" type="video/mp4" />
+                    <source src=".video/m1.mp4" type="video/mp4" />
                     Sizning brauzeringiz video formatini qo‘llab-quvvatlamaydi.
                 </video>
                 <h3>Dars 1: HTML asoslari</h3>
@@ -66,10 +66,18 @@
             </li>
             <li>
                 <video controls>
-                    <source src="videos/dars2.mp4" type="video/mp4" />
+                    <source src=".video/m2.mp4" type="video/mp4" />
                     Sizning brauzeringiz video formatini qo‘llab-quvvatlamaydi.
                 </video>
                 <h3>Dars 2: CSS bilan ishlash</h3>
+                <p>Bu dars CSS yordamida sahifani bezashni o‘rgatadi.</p>
+            </li>
+              <li>
+                <video controls>
+                    <source src=".video/m3.mp4" type="video/mp4" />
+                    Sizning brauzeringiz video formatini qo‘llab-quvvatlamaydi.
+                </video>
+                <h3>Dars 3: CSS bilan ishlash</h3>
                 <p>Bu dars CSS yordamida sahifani bezashni o‘rgatadi.</p>
             </li>
         </ul>
