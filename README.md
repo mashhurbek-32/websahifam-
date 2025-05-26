@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shaxsiy Video Darsliklar Sayti</title>
+<link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,7 +36,8 @@
         }
         .video-list li video {
             max-width: 100%;
-            height: auto;
+            height: 150px;
+            border-radius: 4px;
             display: block;
             margin-bottom: 10px;
         }
@@ -46,7 +48,25 @@
             color: white;
             margin-top: 40px;
         }
-    </style>
+        .video-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .m1 {
+            background-color: #e8f0fe;
+            border: 1px solid #c5cae9;
+        }
+        .m2 {
+            background-color: #fce4ec;
+            border: 1px solid #f8bbd0;
+        }
+        .m3 {
+            background-color: #e3f2fd;
+            border: 1px solid #bbdefb;
+        }
+        </style>
 </head>
 <body>
     <header>
@@ -56,25 +76,25 @@
     <main>
         <h2>Darsliklar ro‘yxati</h2>
         <ul class="video-list">
-            <li>
+            <li class="m1">
                 <video controls>
-                    <source src=".video/m1.mp4" type="video/mp4" />
+                    <source src="./video.mp4/m1.mp4" type="video/mp4" />
                     Sizning brauzeringiz video formatini qo‘llab-quvvatlamaydi.
                 </video>
                 <h3>Dars 1: HTML asoslari</h3>
                 <p>Ushbu dars HTML ning asosiy elementlarini tushuntiradi.</p>
             </li>
-            <li>
+            <li class="m2">
                 <video controls>
-                    <source src=".video/m2.mp4" type="video/mp4" />
+                    <source src="./video.mp4/m2.mp4" type="video/mp4" />
                     Sizning brauzeringiz video formatini qo‘llab-quvvatlamaydi.
                 </video>
                 <h3>Dars 2: CSS bilan ishlash</h3>
                 <p>Bu dars CSS yordamida sahifani bezashni o‘rgatadi.</p>
             </li>
-              <li>
+              <li class="m3">
                 <video controls>
-                    <source src=".video/m3.mp4" type="video/mp4" />
+                    <source src="./video.mp4/m3.mp4" type="video/mp4" />
                     Sizning brauzeringiz video formatini qo‘llab-quvvatlamaydi.
                 </video>
                 <h3>Dars 3: CSS bilan ishlash</h3>
